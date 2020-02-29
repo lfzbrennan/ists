@@ -12,6 +12,8 @@ iptables -A FORWARD -j DROP
 iptables -A INPUT -i lo -j ACCEPT
 iptables -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 iptables -A OUTPUT -m conntrack --ctstate ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -m icmp -j ACCEPT 
+iptables -A INPUT -m icmp -j ACCEPT
 
 echo "Allowing ingress and egress traffic through given ports"
 
