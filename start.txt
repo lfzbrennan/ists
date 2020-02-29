@@ -1,0 +1,16 @@
+
+1. check history
+
+2. install screen htop tree ack-grep iptables-persistent
+
+3. update and upgrade in screen
+
+4. change all passwords (root, services) - remember to change in scoreboard
+
+5. look at /etc/sudoers /etc/sudoers.d/ /etc/passwd /etc/group
+
+6. Backup /bin /usr/bin, and /usr/sbin - possibly others liek /var/www
+
+7. delete shady packages
+
+6. iptables config
